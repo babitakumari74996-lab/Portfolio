@@ -335,7 +335,7 @@ function WorldGlobe({ variant = "about" }: { variant?: string }) {
       <pointLight position={[3, 3, 5]} color="#00dcea" intensity={16} distance={12} />
       <pointLight position={[-3, -2, 3]} color="#ffb347" intensity={contact ? 13 : 5} distance={10} />
       <ParticleField count={contact ? 120 : 55} spread={8} size={0.025} opacity={0.38} />
-      <group scale={(contact ? 0.7 : 0.92) * mobileScale}>
+      <group scale={(contact ? 0.8 : 0.92) * mobileScale}>
         <mesh rotation={[1.18, 0.15, 0.4]}>
           <torusGeometry args={[2.05, 0.009, 5, 128]} />
           <meshBasicMaterial color={contact ? "#ffb347" : "#00f0ff"} transparent opacity={0.34} />
